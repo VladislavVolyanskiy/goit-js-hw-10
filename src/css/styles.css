@@ -36,8 +36,8 @@ body {
   list-style: none;
 }
 
-li:not(:last-child) {
-  margin-bottom: 20px;
+.list-item:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .country-info {

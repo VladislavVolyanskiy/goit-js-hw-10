@@ -28,9 +28,7 @@ function onInput(e) {
 
 function takeRelevantCountries(countries) {
   countries.map(country => {
-    if (country.name.common.toLowerCase().includes(searchQuery.toLowerCase())) {
-      countriesTaken.push(country);
-    }
+    countriesTaken.push(country);
   });
   clearMarkup();
   renderSort();
@@ -54,7 +52,7 @@ function createListMarkup(country) {
       return `
                 <li class='list-item'><img class="flag-img" src=${flags.svg} alt=${name.official} width = "60" height = "auto" />
                     ${name.official}
-                <li>`;
+                </li>`;
     })
     .join('');
 }
